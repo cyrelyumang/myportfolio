@@ -1,0 +1,69 @@
+/* Add CSS styling here */
+body {
+    font-family: Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    width: 300px;
+    margin: 20px;
+    background-color: #f1f1f1;
+    padding: 10px;
+    box-shadow: 2px 2px 5px rgb(255, 255, 255);
+    transition: all 0.5s ease;
+    /* Add transition effect */
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card h2 {
+    margin: 0;
+}
+
+.card p {
+    margin: 0;
+    font-size: 0.8em;
+}
+
+/* Add hover effect */
+.card:hover {
+    transform: scale(1.1);
+    /* Scale up the card on hover */
+    box-shadow: 4px 4px 10px #ccc;
+    /* Add a more intense shadow */
+}
+
+.card:hover {
+    cursor: pointer;
+}
+
+/* Add a class for the active card */
+.active {
+    transform: scale(1.2);
+    /* Scale up the active card */
+    box-shadow: 6px 6px 10px #ccc;
+    /* Add a more intense shadow */
+    z-index: 1;
+    /* Bring the active card to the front */
+}
