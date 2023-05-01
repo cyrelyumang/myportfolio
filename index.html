@@ -1,30 +1,67 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <title>My Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
 
-<head>
-  <title>My Portfolio</title>
-</head>
+  <body>
+    <header>
+      <h1>My Portfolio</h1>
 
-<body>
-  <header>
-    <h1>My Portfolio</h1>
-    <link rel="stylesheet" type="text/css" href="style.css">
-  </header> 
-  <div></div>
-    <div class="card" id="card1">
-      <img src="project1.jpg" alt="Project 1" id="image">
-      <h2>Project 1</h2>
-      <p>A brief description of the project</p>
-    </div>
-    <div class="card" id="card2">
-      <img src="project2.jpg" alt="Project 2">
-      <h2>Project 2</h2>
-      <p>A brief description of the project</p>
-    </div> 
-</body>
-<script>
+      <div class="main__div">
+        <button
+          onclick="document.getElementById('login-form').style.display='block'"
+        >
+          Login
+        </button>
 
+        <div id="login-form" class="modal">
+          <div class="modal-content">
+            <span class="close-btn" onclick="onCloseButton()">&times;</span>
+            <h2>Login Form</h2>
+            <form>
+              <label for="username">Username</label>
+              <input type="text" required="username" name="username" />
+              <br />
+              <label for="password">Password</label>
+              <input type="password" required="password" name="password" />
+              <br />
+              <button type="submit">Login</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </header>
+  </body>
+  <script>
+    function loginUser() {
+      const username = document.getElementById("username").value;
+      const password = document.getElementById("password").value;
 
-</script>
+      // Perform validation
+      if (username.trim() === "" || password.trim() === "") {
+        alert("Please enter a username and password.");
+        return;
+      }
 
+      // Perform login
+      // Replace this with your actual login logic
+      alert(`Logged in as ${username}.`);
+
+      // Hide the login form
+      onCloseButton();
+    }
+
+    function onCloseButton() {
+      document.getElementById("login-form").style.display = "none";
+    }
+
+    document
+      .getElementById("login-form")
+      .addEventListener("submit", function (e) {
+        e.preventDefault();
+        loginUser();
+      });
+  </script>
 </html>
