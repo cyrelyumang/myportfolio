@@ -1,0 +1,37 @@
+.portfolio__section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .portfolio__data {
+    background: linear-gradient(
+      90deg,
+      rgba(2, 0, 36, 1) 0%,
+      rgba(122, 122, 246, 1) 0%,
+      rgba(0, 212, 255, 1) 46%
+    );
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    max-width: 700px;
+    height: 200px;
+    padding: 20px;
+  }
+  
+  .portfolio__title {
+    font-size: 3rem; /* increase the font size to 3rem (48px) */
+  }
+  
+  .portfolio__subtitle {
+    font-size: 2rem; /* increase the font size to 2rem (32px) */
+  }
+  
+  .portfolio__description {
+    font-size: 1.5rem; /* increase the font size to 1.5rem (24px) */
+  }
+   
+  

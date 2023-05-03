@@ -1,67 +1,116 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>My Portfolio</title>
-    <link rel="stylesheet" type="text/css" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/home.css" />
+    <link rel="stylesheet" type="text/css" href="css/about.css" />
+    <link rel="stylesheet" type="text/css" href="css/portfolio.css" />
+    <link rel="stylesheet" type="text/css" href="css/contact.css" />
+    <title>Document</title>
   </head>
-
   <body>
     <header>
-      <h1>My Portfolio</h1>
+      <div class="navbar">
+        <div class="logo"><a href="#">Logo</a></div>
+        <ul class="links">
+          <li><a href="#home" class="home_menu">Home</a></li>
+          <li><a href="#about" class="about_menu">About</a></li>
+          <li><a href="#portfolio" class="portfolio_menu">Portfolio</a></li>
+          <li><a href="#contact" class="contact_menu">Contact</a></li>
+        </ul>
+        <a href="#" class="action_btn">Log In</a>
+        <div class="toggle_btn">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
 
-      <div class="main__div">
-        <button
-          onclick="document.getElementById('login-form').style.display='block'"
-        >
-          Login
-        </button>
+      <!-- RESPONSIVE DROPDOWN MENU -->
+      <div class="dropdown_menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#" class="action_btn">Log In</a></li>
+      </div>
+    </header>
 
-        <div id="login-form" class="modal">
-          <div class="modal-content">
-            <span class="close-btn" onclick="onCloseButton()">&times;</span>
-            <h2>Login Form</h2>
-            <form>
-              <label for="username">Username</label>
-              <input type="text" required="username" name="username" />
-              <br />
-              <label for="password">Password</label>
-              <input type="password" required="password" name="password" />
-              <br />
-              <button type="submit">Login</button>
-            </form>
+    <main class="main">
+      <!-- HOME -->
+      <section class="home__section" id="home">
+        <div class="home__data">
+          <h1 class="home__title">
+            Welcome!,
+            <span
+              class="txt-rotate"
+              data-period="2000"
+              data-rotate='[ "Im Cyrel", "Fajardo", "Yumang" ]'
+            ></span>
+          </h1>
+          <h3 class="home__sibtitle">Junior Java Developer</h3>
+          <p class="home__description">
+            Having the ability to create designs, excel in teamwork, and possess
+            a positive personality.
+          </p>
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+      <section class="about__section" id="about">
+        <div class="about__data">
+          <h1 class="about__title">ABOUT ME</h1>
+          <h3 class="about__sibtitle">My Introduction</h3>
+          <p class="about__description">
+            Java Developer and Future Web Developer From CODEXUS Solution Inc.
+          </p>
+   
+        <div class="about__info">
+          <div>
+            <span class="about__info-title">06+</span>
+            <span class="about__info-name"
+              >Years <br />
+              expirience</span
+            >
+          </div>
+          <div>
+            <span class="about__info-title">10+</span>
+            <span class="about__info-name"
+              >Completed <br />
+              projects</span>
           </div>
         </div>
       </div>
-    </header>
+      </section>
+      <!-- PORTFOLIO -->
+      <section class="portfolio__section" id="portfolio">
+        <div class="portfolio__data">
+          <h1 class="portfolio__title">PORTFOLIO</h1>
+          <h3 class="portfolio__sibtitle"></h3>
+          <p class="portfolio__description"></p>
+        </div>
+      </section>
+      <!-- CONTACT -->
+      <section class="contact__section" id="contact">
+        <div class="contact__data">
+          <h1 class="contact__title">CONTACT</h1>
+          <h3 class="contact__sibtitle"></h3>
+          <p class="contact__description"></p>
+        </div>
+      </section>
+    </main>
+    <script src="javascript/home.js"></script>
+    <script src="javascript/about.js"></script>
+    <script src="javascript/portfolio.js"></script>
+    <script src="javascript/contact.js"></script>
+    <script src="javascript/responsiveNav.js"></script>
   </body>
-  <script>
-    function loginUser() {
-      const username = document.getElementById("username").value;
-      const password = document.getElementById("password").value;
-
-      // Perform validation
-      if (username.trim() === "" || password.trim() === "") {
-        alert("Please enter a username and password.");
-        return;
-      }
-
-      // Perform login
-      // Replace this with your actual login logic
-      alert(`Logged in as ${username}.`);
-
-      // Hide the login form
-      onCloseButton();
-    }
-
-    function onCloseButton() {
-      document.getElementById("login-form").style.display = "none";
-    }
-
-    document
-      .getElementById("login-form")
-      .addEventListener("submit", function (e) {
-        e.preventDefault();
-        loginUser();
-      });
-  </script>
 </html>
