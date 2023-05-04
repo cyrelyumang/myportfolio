@@ -41,7 +41,7 @@
 }
 
 .about__info-title {
-  font-size:  1.25rem;
+  font-size: 1.25rem;
   font-weight: 600;
   color: black;
 }
@@ -54,4 +54,17 @@
   display: block;
   text-align: center;
 }
-
+ 
+/* .about_menu:after{
+  content: '';
+  width: 0;
+  height: 3px;
+  background: #2192ff;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: 0.5s;
+}
+.about_menu:hover::after{
+  width:100%;
+} */
