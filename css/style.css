@@ -29,6 +29,7 @@ header {
   position: fixed;
   background-color: #333;
   width: 100%;
+  z-index: 999;
 }
 
 .navbar {
@@ -38,7 +39,6 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: 0 2rem;
-  z-index: 999;
 }
 
 .navbar .logo a {

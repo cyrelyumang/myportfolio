@@ -3,10 +3,10 @@
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  height: 80vh;
+  height: 79vh;
   display: flex;
   justify-content: center;
-  align-items: center; 
+  align-items: center;
 }
 .home__data {
   /* background: linear-gradient(
@@ -67,7 +67,7 @@
   height: 36%;
   width: 100%;
   border-radius: 24px 24px 0 0;
-  background-color: #66ce8b;
+  background-color: #73d294;
 }
 .image {
   position: relative;
@@ -75,7 +75,7 @@
   width: 150px;
   top: 9%;
   border-radius: 50%;
-  background-color: #4070f4;
+  background-color: #73d294;
   padding: 3px;
   margin-bottom: 10px;
 }
@@ -107,6 +107,7 @@
 .profile-card .media-buttons {
   display: flex;
   align-items: center;
+  justify-content: center;
   margin-top: 15px;
 }
 .media-buttons .link {
@@ -127,20 +128,26 @@
   align-items: center;
   margin-top: 25px;
 }
+
+.buttons {
+  display: flex;
+  position: relative;
+  justify-content: center; 
+}
 .buttons .button {
-  color: #fff;
-  font-size: 14px;
+  color: #000000;
+  font-size: 12px;
   font-weight: 400;
   border: none;
   border-radius: 24px;
   margin: 0 10px;
   padding: 8px 24px;
-  background-color: #4070f4;
+  background-color: #73d294;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 .buttons .button:hover {
-  background-color: #0e4bf1;
+  background-color: #059637;
 }
 .profile-card .analytics {
   display: flex;
@@ -174,7 +181,7 @@
   font-size: x-large;
   border-radius: 30px;
   font-weight: bold;
-  background: #949292;
+  background: #4d4c4c;
   color: rgb(255, 255, 255);
 }
 
