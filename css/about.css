@@ -123,19 +123,19 @@
 /* HONEYCOMB POPUP */
 .skillDialogClass {
   position: absolute;
-  top: 80%; 
+  top: 80%;
   background-color: #01e097;
   border: none;
   padding: 10px;
   text-align: center;
   clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-  margin: 0 auto; 
+  margin: 0 auto;
 }
 
 .skillsHoneyComb {
-  width: 600px;
-  height: 600px;
   position: relative;
+  width: 800px;
+  height: 800px;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -145,6 +145,31 @@
   margin: 0 auto;
 }
 
+.skillsContent {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 800px;
+  height: 400px;
+  top: 25%; 
+  font-size: 48px;
+  color: white;
+}
+
+.skillTitle {
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 800px;
+  height: 100px;
+  top: 10%; 
+  font-size: 48px;
+  color: white;
+}
 /* .skillsHoneyComb:before,
 .skillsHoneyComb:after {
   content: "";
