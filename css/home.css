@@ -67,7 +67,7 @@
   height: 36%;
   width: 100%;
   border-radius: 24px 24px 0 0;
-  background-color: #73d294;
+  background-color: #01e097;
 }
 .image {
   position: relative;
@@ -75,7 +75,7 @@
   width: 150px;
   top: 9%;
   border-radius: 50%;
-  background-color: #73d294;
+  background-color: #01e097;
   padding: 3px;
   margin-bottom: 10px;
 }
