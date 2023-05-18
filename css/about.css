@@ -131,6 +131,21 @@
   clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
   margin: 0 auto;
 }
+.skillDialogClass[open] {
+  animation: fade-in 500ms forwards;
+}
+.skillDialogClass[open]::backdrop {
+  animation: fade-in 500ms forwards;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 
 .skillsHoneyComb {
   position: relative;
@@ -152,7 +167,7 @@
   align-content: center;
   width: 800px;
   height: 400px;
-  top: 25%; 
+  top: 25%;
   font-size: 48px;
   color: white;
 }
@@ -166,7 +181,7 @@
   align-content: center;
   width: 800px;
   height: 100px;
-  top: 10%; 
+  top: 10%;
   font-size: 48px;
   color: white;
 }
