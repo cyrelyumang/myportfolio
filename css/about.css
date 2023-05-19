@@ -233,6 +233,177 @@
   color: white;
 }
 
+/* HONEYCOMB POPUP PROJECTS*/
+.projectDialogClass {
+  position: absolute;
+  top: 80%;
+  background-color: #01e097;
+  border: none;
+  padding: 10px;
+  text-align: center;
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  margin: 0 auto;
+}
+.projectDialogClass[open] {
+  animation: fade-in 500ms forwards;
+}
+.projectDialogClass[open]::backdrop {
+  animation: fade-in 500ms forwards;
+}
+
+.projectHoneyComb {
+  position: relative;
+  width: 800px;
+  height: 800px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: #034e35;
+  /* transform: rotate(-30deg) skewX(30deg) scaleY(0.866); */
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  margin: 0 auto;
+}
+
+.projectContent {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 800px;
+  height: 400px;
+  top: 25%;
+  font-size: 48px;
+  color: white;
+}
+
+.projectTitle {
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 800px;
+  height: 100px;
+  top: 10%;
+  font-size: 48px;
+  color: white;
+}
+
+/* HONEYCOMB POPUP ACTIVITIES*/
+.activitiesDialogClass {
+  position: absolute;
+  top: 80%;
+  background-color: #01e097;
+  border: none;
+  padding: 10px;
+  text-align: center;
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  margin: 0 auto;
+}
+.activitiesDialogClass[open] {
+  animation: fade-in 500ms forwards;
+}
+.activitiesDialogClass[open]::backdrop {
+  animation: fade-in 500ms forwards;
+}
+
+.activitiesHoneyComb {
+  position: relative;
+  width: 800px;
+  height: 800px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: #034e35;
+  /* transform: rotate(-30deg) skewX(30deg) scaleY(0.866); */
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  margin: 0 auto;
+}
+
+.activitiesContent {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 800px;
+  height: 400px;
+  top: 25%;
+  font-size: 48px;
+  color: white;
+}
+
+.activitiesTitle {
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 800px;
+  height: 100px;
+  top: 10%;
+  font-size: 48px;
+  color: white;
+}
+
+/* HONEYCOMB POPUP BACKGROUND*/
+.backgroundDialogClass {
+  position: absolute;
+  top: 80%;
+  background-color: #01e097;
+  border: none;
+  padding: 10px;
+  text-align: center;
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  margin: 0 auto;
+}
+.backgroundDialogClass[open] {
+  animation: fade-in 500ms forwards;
+}
+.backgroundDialogClass[open]::backdrop {
+  animation: fade-in 500ms forwards;
+}
+
+.backgroundHoneyComb {
+  position: relative;
+  width: 800px;
+  height: 800px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: #034e35;
+  /* transform: rotate(-30deg) skewX(30deg) scaleY(0.866); */
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  margin: 0 auto;
+}
+
+.backgroundContent {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 800px;
+  height: 400px;
+  top: 25%;
+  font-size: 48px;
+  color: white;
+}
+
+.backgroundTitle {
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 800px;
+  height: 100px;
+  top: 10%;
+  font-size: 48px;
+  color: white;
+}
+
 @keyframes fade-in {
   0% {
     opacity: 0;
