@@ -120,7 +120,7 @@
   pointer-events: none;
 }
 
-/* HONEYCOMB POPUP */
+/* HONEYCOMB POPUP SKILL*/
 .skillDialogClass {
   position: absolute;
   top: 80%;
@@ -136,15 +136,6 @@
 }
 .skillDialogClass[open]::backdrop {
   animation: fade-in 500ms forwards;
-}
-
-@keyframes fade-in {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
 }
 
 .skillsHoneyComb {
@@ -185,30 +176,71 @@
   font-size: 48px;
   color: white;
 }
-/* .skillsHoneyComb:before,
-.skillsHoneyComb:after {
-  content: "";
-  display: block;
+/* HONEYCOMB POPUP QUOTE*/
+.quoteDialogClass {
   position: absolute;
-  background: #fdb813;
+  top: 80%;
+  background-color: #01e097;
+  border: none;
+  padding: 10px;
+  text-align: center;
   clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-} */
-
-/* .skillsHoneyComb:before {
-  top: -57.5px;
-  left: 0;
-  width: 100px;
-  height: 57.5px;
-  transform: rotate(-30deg) skewX(30deg) scaleY(0.866) scaleY(-1);
+  margin: 0 auto;
+}
+.quoteDialogClass[open] {
+  animation: fade-in 500ms forwards;
+}
+.quoteDialogClass[open]::backdrop {
+  animation: fade-in 500ms forwards;
 }
 
-.skillsHoneyComb:after {
-  bottom: -57.5px;
-  left: 0;
-  width: 100px;
-  height: 57.5px;
-  transform: rotate(-30deg) skewX(30deg) scaleY(0.866);
-} */
+.quoteHoneyComb {
+  position: relative;
+  width: 800px;
+  height: 800px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: #034e35;
+  /* transform: rotate(-30deg) skewX(30deg) scaleY(0.866); */
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  margin: 0 auto;
+}
+
+.quoteContent {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 800px;
+  height: 400px;
+  top: 25%;
+  font-size: 48px;
+  color: white;
+}
+
+.quoteTitle {
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 800px;
+  height: 100px;
+  top: 10%;
+  font-size: 48px;
+  color: white;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 
 /****** Responsive *******/
 
