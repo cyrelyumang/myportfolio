@@ -9,14 +9,9 @@
   align-items: center;
 }
 .home__data {
-  /* background: linear-gradient(
-    90deg,
-    rgba(2, 0, 36, 1) 0%,
-    rgba(122, 122, 246, 1) 0%,
-    rgba(0, 212, 255, 1) 46%
-  ); */
-  border-radius: 20px;
   display: flex;
+  position: absolute;
+  border-radius: 20px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -24,20 +19,85 @@
   max-width: 250px;
   height: 480px;
   padding: 20px;
-  /* border: black solid; */
-  position: absolute;
+  /* border: white solid; */
 }
 
-.home__data:hover {
-  cursor: pointer;
+.home__logo {
+  position: absolute;
+  top: 15%;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #01e097;
+  left: 31%;
 }
 
 .home__title {
   font-size: 3rem; /* increase the font size to 3rem (48px) */
 }
 
+.home_fingerprint_content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 250px;
+  top: 25%;
+  /* border: #4070f4 solid; */
+}
+.home__fingerprint {
+  position: relative;
+  width: 70px;
+  height: 86px;
+  background: url(images/fingerPrint_01.png);
+  background-size: 70px;
+  /* cursor: pointer; */
+}
+.home__fingerprint:hover {
+  cursor: pointer;
+}
+
+.home__fingerprint:hover::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url(images/fingerPrint_02.png);
+  background-size: 70px;
+  animation: fingerAnimation 2s ease-in-out infinite;
+}
+.home__fingerprint:hover::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background: #3fefef;
+  border-radius: 8px;
+  animation: fingerAnimation_line 2s ease-in-out infinite;
+}
+
+@keyframes fingerAnimation {
+  0%,
+  100% {
+    height: 0%;
+  }
+  50% {
+    height: 100%;
+  }
+}
+@keyframes fingerAnimation_line {
+  0%,
+  100% {
+    top: 0%;
+  }
+  50% {
+    top: 100%;
+  }
+}
+
 .home__subtitle {
-  font-size: 2rem; /* increase the font size to 2rem (32px) */
+  font-size: 1rem;
 }
 
 .home__description {
@@ -132,7 +192,7 @@
 .buttons {
   display: flex;
   position: relative;
-  justify-content: center; 
+  justify-content: center;
 }
 .buttons .button {
   color: #000000;
@@ -153,7 +213,7 @@
   display: flex;
   align-items: center;
   /* margin-top: 20px;  */
-} 
+}
 
 .home-close-button {
   position: relative;

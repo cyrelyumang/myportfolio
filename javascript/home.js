@@ -1,6 +1,6 @@
 const hide_card = document.querySelector(".profile-card-hidden");
 const buttonCloseHome = document.querySelector(".home-close-button");
-const buttonClickMe = document.querySelector(".home__data");
+const buttonClickMe = document.querySelector(".home__fingerprint");
 
 buttonCloseHome.addEventListener("click", () => {
   hide_card.classList.replace("profile-card", "profile-card-hidden");
