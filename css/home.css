@@ -3,10 +3,11 @@
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  height: 79vh;
+  height: 100vh; 
   display: flex;
   justify-content: center;
   align-items: center;
+  /* border: white solid; */
 }
 .home__data {
   display: flex;
@@ -23,13 +24,13 @@
 }
 
 .home__logo {
-  position: absolute;
-  top: 15%;
+  position: relative;
+  top: -40%;
   width: 100px;
   height: 100px;
   border-radius: 50%;
   background-color: #01e097;
-  left: 31%;
+  /* border: #000000 solid; */
 }
 
 .home__title {
@@ -43,7 +44,7 @@
   align-items: center;
   justify-content: center;
   width: 250px;
-  top: 25%;
+  top: 35%;
   /* border: #4070f4 solid; */
 }
 .home__fingerprint {
