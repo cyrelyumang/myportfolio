@@ -1,25 +1,27 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
 
+.about__content {
+  display: flex;
+  position: absolute;
+  border-radius: 10px;
+  border: #ff0022;
+}
 .about__section {
-  margin-top: 50px;
-  height: 100vh;
+  /* margin-top: 80px; */
   position: relative;
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
+  padding-top: 80px;
+  height: 100vh;
+  border: white solid;
 }
 .honeycomb {
   display: flex;
   flex-wrap: wrap;
   list-style: none;
-  -webkit-box-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
   align-items: center;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0;
-  /* transform: translateY(80px); */
+  justify-content: center;
+  bottom: 50%;
+  position: static;
+  border: rgb(21, 255, 0) solid;
 }
 
 .honeycomb-cell {
